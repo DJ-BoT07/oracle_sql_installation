@@ -1,18 +1,20 @@
 # Oracle SQL INSTALLATION ON UBUNTU (debian) based systems.
-### STEP 1: DOWNLOAD THE .zip file from the google drive link provided below.
+### STEP 1: DOWNLOAD THE .zip file from the google drive link provided below.<br/><br/>
 ```
   add google drive link here
 ```
+<br/><br/>
 ### STEP 2: EXTRACT ALL THE FILES IN THE DOWNLOADS FOLDER (makes the process much easier.)
 >Three files should be extracted namely jdk-17.0.4.1_linux-x64_bin.deb , oracle-xe_11.2.0-2_amd64.deb , sqldeveloper-22.2.0.173.2018-no-jre.zip
-<br/><br/>
+<br/><br/><br/><br/>
 ### STEP 3:  SETTING UP THE PREREQUISITES:<br/>
-a) Open Up your terminal and type the following command followed by your password:\
+<br/><br/>
+a) _**Open Up your terminal and type the following command followed by your password:**_\
 \
 ```sudo gedit /sbin/chkconfig```
 >After successfully running the command a text editor should open up.
 
-b) Paste the following text in the file and save it.\
+b) _**Paste the following text in the file and save it.**_\
 <br/>
 ```
 #!/bin/bash
@@ -32,11 +34,11 @@ fi
 update-rc.d oracle-xe defaults 80 01
 ```
 
-c) Change privilege by executing the following command:\
+c) _**Change privilege by executing the following command:**_\
 \
 ```chmod 755 /sbin/chkconfig``` <br/>
 <br/>
-d) Setting up kernal parameters:<br/> 
+d) _**Setting up kernal parameters:**_<br/> 
 <br/>
 ```sudo gedit /etc/sysctl.d/60-oracle.conf```
 <br/>
@@ -53,14 +55,14 @@ kernel.shmmax=536870912
 <br/>
 <br/>
 
-e) Load new kernal parameters by entering :
+e) _**Load new kernal parameters by entering :**_
 <br/>
 <br/>
 ```sudo service procps start```
 <br/>
 <br/>
 
-f) Some more changes :
+f) _**Some more changes :**_
 <br/><br/>
 ```ln -s /usr/bin/awk /bin/awk```
 <br/>
@@ -79,10 +81,10 @@ f) Some more changes :
 <br/><br/>
 ```sudo mount -t tmpfs shmfs -o size=2048m /dev/shm```
 <br/><br/>
-  b)Create a file at the required location by:
+  b) _**Create a file at the required location by:**_
 ```sudo gedit /etc/rc2.d/S01shm_load```
 <br/><br/>
-  c) Now copy and paste following lines into the file :
+  c) _**Now copy and paste following lines into the file :**_
  ```
   #!/bin/sh
 case "$1" in
@@ -96,7 +98,7 @@ start) mkdir /var/lock/subsys 2>/dev/null
 esac 
 ```
 <br/><br/>
-  d)Save the file and provide execute permissions :
+  d) _**Save the file and provide execute permissions :**_
   <br/><br/>
   ```sudo chmod 755 /etc/rc2.d/S01shm_load```
   <br/><br/>
