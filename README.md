@@ -101,3 +101,39 @@ esac
   <br/><br/>
   ```sudo chmod 755 /etc/rc2.d/S01shm_load```
   <br/><br/>
+  
+### STEP 6: CONFIGURING ORACLE SQL 11 XE
+<br/><br/>
+```sudo /etc/init.d/oracle-xe configure```
+<br/><br/>
+
+> NOTE: PORTS SHOULLD BE SET TO DEFAULT NO CHANGES SHOULD BE MADE AND FOR THE MACHINES OWNED BY COLLEGE PASSWORD SHOULD BE SET TO 'admin' only
+
+### STEP 7: ADDING ENVIRONMENT VARIABLES:
+```cd /home```
+<br/>
+```sudo gedit ~/.bashrc```
+<br/>
+>A FILE SHOULD OPEN WITH SOME TEXT ALREADY WRITTEN IN IT PASTE THE FOLLOWING TEXT :
+```
+export ORACLE_HOME=/u01/app/oracle/product/11.2.0/xe
+export ORACLE_SID=XE
+export NLS_LANG=`$ORACLE_HOME/bin/nls_lang.sh`
+export ORACLE_BASE=/u01/app/oracle
+export LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH
+export PATH=$ORACLE_HOME/bin:$PATH
+```
+<br/><br/>
+
+
+### STEP 8: RESTART THE MACHINE
+
+### STEP 9 : START ORACLE 11 XE
+```sudo service oracle-xe start```
+<br/><br/>
+
+### STEP 10 :
+```sqlplus```
+
+
+
