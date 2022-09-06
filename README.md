@@ -6,14 +6,14 @@
 ### STEP 2: EXTRACT ALL THE FILES IN THE DOWNLOADS FOLDER (makes the process much easier.)
 >Three files should be extracted namely jdk-17.0.4.1_linux-x64_bin.deb , oracle-xe_11.2.0-2_amd64.deb , sqldeveloper-22.2.0.173.2018-no-jre.zip
 
-## Setting Up Prerequisits:
+##Step 3:  SETTING UP THE PREREQUISITES:
 a) Open Up your terminal and type the following command followed by your password:\
 \
 ```sudo gedit /sbin/chkconfig```\
 >After successfully running the command a text editor should open up.
 
 b) Paste the following text in the file and save it.\
-\
+<br/>
 ```
 #!/bin/bash
 # Oracle 11gR2 XE installer chkconfig hack for Ubuntu
@@ -34,10 +34,70 @@ update-rc.d oracle-xe defaults 80 01
 
 c) Change privilege by executing the following command:\
 \
-```chmod 755 /sbin/chkconfig``` \
-
+```chmod 755 /sbin/chkconfig``` <br/>
+<br/>
 d) Setting up kernal parameters:<br/> 
+<br/>
 ```sudo gedit /etc/sysctl.d/60-oracle.conf```
+<br/>
+<br/>
+> Again text editor should open up and you have to enter the following text in the file : <br/>
+> <br/>
+```
+# Oracle 11g XE kernel parameters  
+fs.file-max=6815744  
+net.ipv4.ip_local_port_range=9000 65000  
+kernel.sem=250 32000 100 128 
+kernel.shmmax=536870912 
+```
+<br/>
+<br/>
 
-       
- 
+e) Load new kernal parameters by entering :
+<br/>
+<br/>
+```sudo service procps start```
+<br/>
+<br/>
+
+f) Some more changes :
+<br/><br/>
+```ln -s /usr/bin/awk /bin/awk```
+<br/>
+```mkdir /var/lock/subsys```
+<br/>
+```touch /var/lock/subsys/listener```
+<br/>
+<br/>
+
+## STEP 4: INSTALLING Oracle 11 XE (by opening terminal in the downloads folder) :
+<br/><br/>
+```sudo dpkg --install oracle-xe_11.2.0-2_amd64.deb```
+<br/><br/>
+
+## STEP 5 : AVOIDING 'MEMORY TARGET' ERROR.
+  a)
+<br/><br/>
+```sudo mount -t tmpfs shmfs -o size=2048m /dev/shm```
+<br/><br/>
+  b)Create a file at the required location by:
+```sudo gedit /etc/rc2.d/S01shm_load```
+<br/><br/>
+  c) Now copy and paste following lines into the file :
+ ```
+  #!/bin/sh
+case "$1" in
+start) mkdir /var/lock/subsys 2>/dev/null
+       touch /var/lock/subsys/listener
+       rm /dev/shm 2>/dev/null
+       mkdir /dev/shm 2>/dev/null
+       mount -t tmpfs shmfs -o size=2048m /dev/shm ;;
+*) echo error
+   exit 1 ;;
+esac 
+```
+<br/><br/>
+  d)Save the file and provide execute permissions :
+  <br/><br/>
+  ```sudo chmod 755 /etc/rc2.d/S01shm_load```
+  <br/><br/>
