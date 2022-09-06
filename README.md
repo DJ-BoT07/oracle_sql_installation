@@ -12,7 +12,7 @@ a) Open Up your terminal and type the following command followed by your passwor
 ```sudo gedit /sbin/chkconfig```\
 >After successfully running the command a text editor should open up.
 
-b)Paste the following text in the file and save it.\
+b) Paste the following text in the file and save it.\
 \
 ```
 #!/bin/bash
@@ -31,5 +31,13 @@ echo '### END INIT INFO' >> $file
 fi
 update-rc.d oracle-xe defaults 80 01
 ```
+
+c) Change privilege by executing the following command:\
+\
+```chmod 755 /sbin/chkconfig``` \
+
+d) Setting up kernal parameters:<br/> 
+```sudo gedit /etc/sysctl.d/60-oracle.conf```
+
        
  
