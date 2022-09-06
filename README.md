@@ -9,7 +9,7 @@
 ### STEP 3:  SETTING UP THE PREREQUISITES:<br/>
 a) Open Up your terminal and type the following command followed by your password:\
 \
-```sudo gedit /sbin/chkconfig```\
+```sudo gedit /sbin/chkconfig```
 >After successfully running the command a text editor should open up.
 
 b) Paste the following text in the file and save it.\
