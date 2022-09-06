@@ -5,8 +5,8 @@
 ```
 ### STEP 2: EXTRACT ALL THE FILES IN THE DOWNLOADS FOLDER (makes the process much easier.)
 >Three files should be extracted namely jdk-17.0.4.1_linux-x64_bin.deb , oracle-xe_11.2.0-2_amd64.deb , sqldeveloper-22.2.0.173.2018-no-jre.zip
-
-##Step 3:  SETTING UP THE PREREQUISITES:
+<br/><br/>
+### STEP 3:  SETTING UP THE PREREQUISITES:<br/>
 a) Open Up your terminal and type the following command followed by your password:\
 \
 ```sudo gedit /sbin/chkconfig```\
@@ -71,7 +71,7 @@ f) Some more changes :
 <br/>
 
 ## STEP 4: INSTALLING Oracle 11 XE (by opening terminal in the downloads folder) :
-<br/><br/>
+<br/>
 ```sudo dpkg --install oracle-xe_11.2.0-2_amd64.deb```
 <br/><br/>
 
@@ -115,6 +115,7 @@ esac
 ```sudo gedit ~/.bashrc```
 <br/>
 >A FILE SHOULD OPEN WITH SOME TEXT ALREADY WRITTEN IN IT PASTE THE FOLLOWING TEXT :
+<br/><br/>
 ```
 export ORACLE_HOME=/u01/app/oracle/product/11.2.0/xe
 export ORACLE_SID=XE
@@ -127,12 +128,13 @@ export PATH=$ORACLE_HOME/bin:$PATH
 
 
 ### STEP 8: RESTART THE MACHINE
+<br/><br/>
 
 ### STEP 9 : START ORACLE 11 XE
 ```sudo service oracle-xe start```
 <br/><br/>
 
-### STEP 10 :
+### STEP 10 : F'ing ENJOY
 ```sqlplus```
 
 
