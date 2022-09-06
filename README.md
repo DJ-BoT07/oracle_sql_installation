@@ -60,7 +60,7 @@ e) Load new kernal parameters by entering :
 <br/>
 <br/>
 
-f) Some more changes:
+f) Some more changes :
 <br/><br/>
 ```ln -s /usr/bin/awk /bin/awk```
 <br/>
@@ -70,8 +70,7 @@ f) Some more changes:
 <br/>
 <br/>
 
-## STEP 4: INSTALLING Oracle 11 XE (by opening terminal in the downloads folder) :
-<br/>
+## STEP 4: INSTALLING Oracle 11 XE (by opening terminal in the downloads folder) :<br/>
 ```sudo dpkg --install oracle-xe_11.2.0-2_amd64.deb```
 <br/><br/>
 
@@ -83,7 +82,7 @@ f) Some more changes:
   b)Create a file at the required location by:
 ```sudo gedit /etc/rc2.d/S01shm_load```
 <br/><br/>
-  c) Now copy and paste following lines into the file:
+  c) Now copy and paste following lines into the file :
  ```
   #!/bin/sh
 case "$1" in
@@ -97,12 +96,12 @@ start) mkdir /var/lock/subsys 2>/dev/null
 esac 
 ```
 <br/><br/>
-  d)Save the file and provide execute permissions:
+  d)Save the file and provide execute permissions :
   <br/><br/>
   ```sudo chmod 755 /etc/rc2.d/S01shm_load```
   <br/><br/>
   
-### STEP 6: CONFIGURING ORACLE SQL 11g XE
+### STEP 6: CONFIGURING ORACLE SQL 11 XE
 <br/><br/>
 ```sudo /etc/init.d/oracle-xe configure```
 <br/><br/>
