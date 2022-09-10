@@ -22,19 +22,21 @@
 >drwxr-xr-x 117 root  root  4096 Sep 10 01:06 ../
 >drwxr-xr-x   9 10668 10668 4096 Sep  2 10:56 jdk-17/
 
-#STEP 5: INSTALLING SQL DEVELOPER
-  a) change directory to opt
-  ```cd /opt```
-  b) unzipping sqldeveloper.zip
-  ```sudo unzip sqldeveloper-22.2.0.173.2018-no-jre.zip```
-  >CHECK FILE NAME IF ERROR POPS 
-  c) enter sqldeveloper folder in opt directory:
-  ```cd /opt/sqldeveloper```
-  d)run script:
-  ```./sqldeveloper.sh```
-  f)specify full path of jdk:
-  ```/usr/lib/jvm/jdk-17```
-  g)application should startup
+## STEP 5: INSTALLING SQL DEVELOPER<br/><br/>
+  a) change directory to opt<br/><br/>
+  ```cd /opt```<br/><br/>
+  b) unzipping sqldeveloper.zip<br/>
+  ```sudo unzip sqldeveloper-22.2.0.173.2018-no-jre.zip```<br/>
+  >CHECK FILE NAME IF ERROR POPS <br/><br/>
+
+
+  c) enter sqldeveloper folder in opt directory:<br/>
+  ```cd /opt/sqldeveloper```<br/><br/>
+  d)run script:<br/>
+  ```./sqldeveloper.sh```<br/><br/>
+  f)specify full path of jdk:<br/>
+  ```/usr/lib/jvm/jdk-17```<br/><br/>
+  g)application should startup<br/><br/><br/>
 
 ## STEP 6: CLOSE THE APPLICATION AND TERMINAL AND OPEN A NEW TERMINAL TO CREATE A SHORTCUT:
 ```sudo ln -s /opt/sqldeveloper/sqldeveloper.sh /usr/local/bin/sqldeveloper```
