@@ -1,4 +1,4 @@
-# Oracle SQL INSTALLATION ON UBUNTU (debian) based systems.
+# Oracle SQL INSTALLATION ON UBUNTU (debian) based systems.(not updated)
 ### STEP 1: DOWNLOAD THE .zip file from the google drive link provided below.<br/><br/>
 ```
 https://drive.google.com/drive/folders/1UkO_bC8RkDfD5m04F_6ce6c4IuHNLwEJ?usp=sharing
