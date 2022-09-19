@@ -147,5 +147,9 @@ export PATH=$ORACLE_HOME/bin:$PATH
 ### STEP 10 : F'ing ENJOY
 ```sqlplus```
 
+##LINK TO MONGODB INSTALLATION GUIDE
+```https://github.com/Aryansh1520/all_mongodb.git```
+
+
 
 
