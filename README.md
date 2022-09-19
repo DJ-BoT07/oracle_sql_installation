@@ -1,4 +1,11 @@
 # Oracle SQL INSTALLATION ON UBUNTU (debian) based systems.(not updated)
+
+### INSTALLING ALL DEPENDENCIES
+
+```sudo apt-get install alien libaio1 unixodbc```
+```sudo apt-get net-tools```
+
+
 ### STEP 1: DOWNLOAD THE .zip file from the google drive link provided below.<br/><br/>
 ```
 https://drive.google.com/drive/folders/1UkO_bC8RkDfD5m04F_6ce6c4IuHNLwEJ?usp=sharing
@@ -127,6 +134,8 @@ export PATH=$ORACLE_HOME/bin:$PATH
 ```
 <br/><br/>
 
+```echo $PATH```
+```source ~/.profile```
 
 ### STEP 8: RESTART THE MACHINE
 <br/><br/>
