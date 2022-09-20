@@ -134,9 +134,9 @@ export PATH=$ORACLE_HOME/bin:$PATH
 ```
 <br/><br/>
 
-```echo $PATH```
+```echo $PATH```<br/>
 ```source ~/.profile```
-
+<br/>
 ### STEP 8: RESTART THE MACHINE
 <br/><br/>
 
