@@ -2,7 +2,7 @@
 
 ### INSTALLING ALL DEPENDENCIES
 
-```sudo apt-get install alien libaio1 unixodbc```
+```sudo apt-get install alien libaio1 unixodbc```<br/>
 ```sudo apt-get net-tools```
 
 
