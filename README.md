@@ -58,7 +58,7 @@ update-rc.d oracle-xe defaults 80 01
 
 c) _**Change privilege by executing the following command:**_\
 \
-```chmod 755 /sbin/chkconfig``` <br/>
+```sudo chmod 755 /sbin/chkconfig``` <br/>
 <br/>
 d) _**Setting up kernal parameters:**_<br/> 
 <br/>
@@ -90,7 +90,7 @@ f) _**Some more changes :**_
 <br/>
 ```mkdir /var/lock/subsys```
 <br/>
-```touch /var/lock/subsys/listener```
+```sudo touch /var/lock/subsys/listener```
 <br/>
 <br/>
 
