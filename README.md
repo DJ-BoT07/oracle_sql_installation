@@ -11,11 +11,13 @@ update-rc.d -f oracle-xe remove
 update-rc.d -f oracle-mount remove
 update-rc.d -f oracle-shm remove
 ```<br/><br/>
+
+```
 ### INSTALLING ALL DEPENDENCIES
 
 ```sudo apt-get install alien libaio1 unixodbc```<br/>
 ```sudo apt-get net-tools```
-```
+
 
 ### STEP 1: DOWNLOAD THE .zip file from the google drive link provided below.<br/><br/>
 ```
