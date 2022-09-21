@@ -10,9 +10,10 @@ rm /etc/default/oracle-xe
 update-rc.d -f oracle-xe remove
 update-rc.d -f oracle-mount remove
 update-rc.d -f oracle-shm remove
-```<br/><br/>
-
 ```
+<br/><br/>
+
+
 ### INSTALLING ALL DEPENDENCIES
 
 ```sudo apt-get install alien libaio1 unixodbc```<br/>
@@ -21,8 +22,9 @@ update-rc.d -f oracle-shm remove
 
 ### STEP 1: DOWNLOAD THE .zip file from the google drive link provided below.<br/><br/>
 ```
-https://drive.google.com/drive/folders/1UkO_bC8RkDfD5m04F_6ce6c4IuHNLwEJ?usp=sharing
+https://drive.google.com/drive/folders/1UkO_bC8RkDfD5m04F_6ce6c4IuHNLwEJ?usp=sharing  
 ```
+
 <br/><br/>
 ### STEP 2: EXTRACT ALL THE FILES IN THE DOWNLOADS FOLDER (makes the process much easier.)
 >Three files should be extracted namely jdk-17.0.4.1_linux-x64_bin.deb , oracle-xe_11.2.0-2_amd64.deb , sqldeveloper-22.2.0.173.2018-no-jre.zip
