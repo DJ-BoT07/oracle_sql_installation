@@ -1,5 +1,16 @@
 # Oracle SQL INSTALLATION ON UBUNTU (debian) based systems.(not updated)
 
+## UNINSTALLING AFTER FAILED INSTALLALTION
+```
+/etc/init.d/oracle-xe stop
+dpkg --purge oracle-xe
+rm -r /u01/app
+rm /etc/default/oracle-xe
+
+update-rc.d -f oracle-xe remove
+update-rc.d -f oracle-mount remove
+update-rc.d -f oracle-shm remove
+```<br/><br/>
 ### INSTALLING ALL DEPENDENCIES
 
 ```sudo apt-get install alien libaio1 unixodbc```<br/>
