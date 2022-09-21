@@ -15,10 +15,10 @@ update-rc.d -f oracle-shm remove
 
 ```sudo apt-get install alien libaio1 unixodbc```<br/>
 ```sudo apt-get net-tools```
-
+```
 
 ### STEP 1: DOWNLOAD THE .zip file from the google drive link provided below.<br/><br/>
-```
+
 https://drive.google.com/drive/folders/1UkO_bC8RkDfD5m04F_6ce6c4IuHNLwEJ?usp=sharing
 ```
 <br/><br/>
