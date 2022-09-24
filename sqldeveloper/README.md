@@ -11,7 +11,7 @@
 
 ### STEP 3: INSTALLING JAVA DEVELOPMENT KIT:
 >OPEN TERMINAL IN DOWNLOADS FOLDER
-```sudo dpkg -i jdk-17.0.4.1_linux-x64_bin.deb```
+```sudo dpkg -i /home/ubuntu/Downloads/jdk-17.0.4.1_linux-x64_bin.deb```
 >CHECK FILE NAME IF ERROR POPS UP
 
 ### STEP 4: VERIFY JDK INSTALLATION:
