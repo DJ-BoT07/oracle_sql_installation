@@ -11,7 +11,7 @@
 
 ### STEP 3: INSTALLING JAVA DEVELOPMENT KIT:
 >OPEN TERMINAL IN DOWNLOADS FOLDER
-```sudo dpkg -i /home/ubuntu/Downloads/jdk-17.0.4.1_linux-x64_bin.deb```
+```sudo dpkg -i jdk-17.0.4.1_linux-x64_bin.deb```
 >CHECK FILE NAME IF ERROR POPS UP
 
 ### STEP 4: VERIFY JDK INSTALLATION:
@@ -26,7 +26,7 @@
   a) change directory to opt<br/><br/>
   ```cd /opt```<br/><br/>
   b) unzipping sqldeveloper.zip<br/>
-  ```sudo unzip sqldeveloper-22.2.0.173.2018-no-jre.zip```<br/>
+  ```sudo unzip /home/ubuntu/Downloads/sqldeveloper-22.2.0.173.2018-no-jre.zip```<br/>
   >CHECK FILE NAME IF ERROR POPS <br/><br/>
 
 
