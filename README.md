@@ -17,7 +17,7 @@ update-rc.d -f oracle-shm remove
 ### INSTALLING ALL DEPENDENCIES
 
 ```sudo apt-get install alien libaio1 unixodbc```<br/>
-```sudo apt-get net-tools```
+```sudo apt-get install -y net-tools```
 
 
 ### STEP 1: DOWNLOAD THE .zip file from the google drive link provided below.<br/><br/>
