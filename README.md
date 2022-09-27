@@ -1,4 +1,4 @@
-# Oracle SQL INSTALLATION ON UBUNTU (debian) based systems.(not updated)
+# Oracle SQL INSTALLATION ON UBUNTU (debian) based systems.(COMPLETE)
 
 ## UNINSTALLING AFTER FAILED INSTALLALTION
 ```
