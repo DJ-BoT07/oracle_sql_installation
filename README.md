@@ -161,6 +161,18 @@ export PATH=$ORACLE_HOME/bin:$PATH
 
 ### STEP 10 : F'ing ENJOY
 ```sqlplus```
+<br/>
+### STEP 1: CREATING AND SETTING UP NEW USER NAME
+```sqlplus sys as sysdba```
+>ENTER PASSWORD
+
+```CREATE USERNAME username_of_choice  IDENTIFIED BY password;```
+<br/>
+```GRANT ALL PRIVILEGES TO username_of_choice;```
+<br/>
+
+<br/><br/>
+
 
 ## LINK TO MONGODB INSTALLATION GUIDE
 ```https://github.com/Aryansh1520/all_mongodb.git```
