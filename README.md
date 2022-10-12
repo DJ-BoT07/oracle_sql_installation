@@ -166,7 +166,7 @@ export PATH=$ORACLE_HOME/bin:$PATH
 ```sqlplus sys as sysdba```
 >ENTER PASSWORD
 
-```CREATE USERNAME username_of_choice  IDENTIFIED BY password;```
+```CREATE USER username_of_choice  IDENTIFIED BY password;```
 <br/>
 ```GRANT ALL PRIVILEGES TO username_of_choice;```
 <br/>
