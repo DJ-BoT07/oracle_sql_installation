@@ -158,6 +158,13 @@ export PATH=$ORACLE_HOME/bin:$PATH
 ### STEP 9 : START ORACLE 11 XE
 ```sudo service oracle-xe start```
 <br/><br/>
+## INSTALLING RLWRAP FOR SQLPLUS
+
+**Step 1: Install rlwrap**
+```
+sudo apt-get install rlwrap
+rlwrap sqlplus
+```
 
 ### STEP 10 : F'ing ENJOY
 ```sqlplus```
